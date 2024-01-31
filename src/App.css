@@ -1,0 +1,268 @@
+.App {
+  text-align: center;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items at the center horizontally */
+}
+
+/* Add margin to the Select for spacing */
+.form-style .MuiFormControl-root {
+  margin-bottom: 16px;
+}
+
+/* Adjust the Submit button position */
+.form-style .MuiButton-root {
+  margin-top: 16px;
+}
+
+
+.hamburger-icon {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.sidebar {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.sidebar.open {
+  width: 100px;
+}
+
+.submenubar.open {
+  text-align: center;
+  padding: 15px 50px;
+  height: 1250px;
+  background-color: #090a0a;
+  position:fixed;
+  margin-left: 85px;
+  margin-top: -180px;
+
+}
+
+
+.subsubmenubar.open {
+  width: 350px;
+  height: 1250px;
+  background-color: #181616;
+  position:fixed;
+  color: #fff;
+  margin-left: 315px;
+  left: 0; /* Set left to 0 to position it at the left edge */
+  top: 0; /* Set top to 0 to position it at the top edge */
+  z-index: 2; /* Ensure it's above the sidebar */
+}
+
+
+
+.iconsWhatsapp  {
+  color:#0bbb31;
+  padding: 5px;
+}
+
+.iconsMess{
+  color: #5f6ce6;
+  padding: 5px;
+
+}
+
+.iconsInsta{
+  color: #d61e2d;
+  padding: 5px;
+
+}
+
+.iconSkype {
+  color: #fff;
+  padding: 5px;
+
+}
+
+
+.close-btn {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  color: white;
+}
+/* App.css */
+.selected-category {
+  background-image:linear-gradient(#8baaaa,#ae8b9c);
+  color: white;
+  border-radius: 25px;
+}
+ 
+.image-message-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.message-content {
+  display: flex;
+  width: 250px;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message-content h5,
+.message-content p {
+  margin: 0;
+}
+
+.image-style {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+/* Add these styles to your existing CSS file or create a new one */
+
+.individual-message-sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  color: #090a0a;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  padding: 20px;
+  box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.individual-message-sidebar .close-btn {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Add any additional styles as needed */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.submenu {
+  display: none;
+}
+
+.submenu.open {
+  display: block;
+}
+
+
+.LoginPage {
+  height: fit-content;
+  width: 600px;
+  margin: 40px auto;
+  border-radius: 8px;
+  padding: 30px;
+  background-image:  linear-gradient(rgb(89, 172, 100),lightgreen)
+
+}
+
+.loginInputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginInputsTags {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.prayerRequest {
+  display: flex;
+  justify-content: center;
+}
+
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to right, #3498db, #2980b9);
+  max-width: 600px; /* Adjust the max-width according to your preference */
+  margin: 0 auto;  /* This centers the container horizontally */
+  padding: 20px;   /* Add padding for some space around the content */
+  border-radius: 10px;
+  color: #fff;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

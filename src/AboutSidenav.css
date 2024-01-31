@@ -1,0 +1,37 @@
+.about-sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 2; /* Make it higher than the main sidebar */
+  }
+  
+  .about-sidenav.open {
+    width: 250px;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .about-sidenav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-sidenav li {
+    padding: 15px;
+    color: white;
+  }
+  
